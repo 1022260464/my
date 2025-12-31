@@ -192,6 +192,10 @@ class Solution {
 
 # 27. 移除元素[https://leetcode.cn/problems/remove-element/](https://leetcode.cn/problems/remove-element/)
 
+## 不写了，先看跨晚去h
+
+![05A883B3](/source/images/05A883B3-20251231210635-i83h6am.png)
+
 ```java
 class Solution {
     public int removeElement(int[] nums, int val) {//快慢指针法，我在一开始习惯性的用了对撞指针
