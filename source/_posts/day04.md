@@ -1,7 +1,7 @@
 ---
 title: day04
 date: '2026-01-04 17:34:02'
-updated: '2026-01-04 19:49:42'
+updated: '2026-01-04 19:57:48'
 permalink: /post/day04-z1uoqih.html
 comments: true
 toc: true
@@ -183,6 +183,7 @@ class MyLinkedList {
         ListNode toadd = new ListNode(val); // 在堆中创建新节点
         toadd.next = pred.next;             // 第一步：新节点指向原本的后继
         pred.next = toadd;                  // 第二步：前驱节点指向新节点
+//这里注意顺序不能调换if(pred,next)先指向新节点，我的新节点在指向原本后继节点的时候就会找不到
     }
 
     /**
@@ -197,6 +198,7 @@ class MyLinkedList {
         // 2. 准备工作
         size--; // 有效元素个数减少
         ListNode pred = dummyhead;
+
 
         // 3. 寻找前驱：停在待删除节点的前一个
         for (int i = 0; i < index; i++) {
