@@ -1,7 +1,7 @@
 ---
 title: day04
 date: '2026-01-04 17:34:02'
-updated: '2026-01-04 19:57:48'
+updated: '2026-01-05 16:14:40'
 permalink: /post/day04-z1uoqih.html
 comments: true
 toc: true
@@ -213,7 +213,7 @@ class MyLinkedList {
 }
 ```
 
-# 解惑专题：
+# 解惑专题：？
 
 ---
 
@@ -383,8 +383,6 @@ public void countdown(int n) {
 1. ​**迭代法 (Iterative)** ​：使用 `while` 循环和临时指针（省空间，不费栈）。
 2. ​**递归法 (Recursive)** ：使用函数自调用（代码简洁，但要注意栈深度）。
 
----
-
 ### 专业笔记补充：内存与执行对比图
 
 |**特性**|**循环 (Iteration)**|**递归 (Recursion)**||||
@@ -406,10 +404,42 @@ public void countdown(int n) {
 
 # 
 
-# *206.反转链表 （未详细分析）
+# 206.反转链表 （未详细分析）
+
+## 方法一：
+
+```java
+class Solution {//迭代（双指针法）
+    public ListNode reverseList(ListNode head) {
+        ListNode cur = head, pre = null;
+        while(cur != null) {
+            ListNode tmp = cur.next; // 暂存后继节点 cur.next
+            cur.next = pre;          // 修改 next 引用指向
+            pre = cur;               // pre 暂存 cur
+            cur = tmp;               // cur 访问下一节点
+        }
+        return pre;//返回头节点
+    }
+}
+
+作者：Krahets
+链接：https://leetcode.cn/problems/reverse-linked-list/solutions/2361282/206-fan-zhuan-lian-biao-shuang-zhi-zhen-r1jel/
+来源：力扣（LeetCode）
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+
+```
+
+### 解题思路 ：
+
+- 初始化当前指针为cur以及前驱指针为null，当cur不为null的时候一直向后循环（当指向最后一个时候为null），用temp暂存后继结点（如果在修改指针后 去访问下一个节点，没有暂存此时会找不到），接下来依次修改指针，最后返回头结点即可。
+
+## 方法二
+
+（待补充）
 
 ```java
 class Solution {
+//递归做法
     // 首先「递」到链表末尾，把末尾节点作为新链表的头节点 revHead
     // 然后在「归」的过程中，把经过的节点依次插在新链表的末尾（尾插法）
     public ListNode reverseList(ListNode head) {
