@@ -1,7 +1,7 @@
 ---
 title: day07
 date: '2026-01-07 13:16:44'
-updated: '2026-01-07 18:40:31'
+updated: '2026-01-29 17:38:38'
 permalink: /post/day07-z1fbznd.html
 comments: true
 toc: true
