@@ -1,7 +1,7 @@
 ---
-title: day26
+title: day27
 date: '2026-02-07 19:42:22'
-updated: '2026-02-07 20:03:46'
+updated: '2026-02-18 18:37:48'
 permalink: /post/day26-1bewst.html
 comments: true
 toc: true
@@ -9,7 +9,7 @@ toc: true
 
 
 
-# day26
+# day27
 
 # 第八章 贪心算法 part01
 
