@@ -1,7 +1,7 @@
 ---
-title: day27
+title: day28
 date: '2026-02-07 20:05:37'
-updated: '2026-02-07 20:19:22'
+updated: '2026-02-18 18:37:57'
 permalink: /post/day27-z1k5ims.html
 comments: true
 toc: true
@@ -9,7 +9,7 @@ toc: true
 
 
 
-# day27
+# day28
 
 # 第八章 贪心算法 part02
 
