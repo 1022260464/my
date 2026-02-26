@@ -1,7 +1,7 @@
 ---
 title: day43
 date: '2026-02-26 20:30:45'
-updated: '2026-02-26 20:43:42'
+updated: '2026-02-26 20:46:44'
 permalink: /post/day43-zkjzyd.html
 comments: true
 toc: true
@@ -526,62 +526,4 @@ class Solution {
 
   你想挑战一下，看看如何把这个二维数组压缩成一维数组吗？
 
-## 后缀数组
-
-```java
-func findLength(nums1, nums2 []int) (ans int) {
-    n1, n2 := int32(len(nums1)), int32(len(nums2))
-    s := make([]byte, 0, n1+n2+1)
-    for _, x := range nums1 {
-        s = append(s, byte(x))
-    }
-    s = append(s, 101) // 用一个不在数组中的数拼接两个数组
-    for _, x := range nums2 {
-        s = append(s, byte(x))
-    }
-    n := len(s)
-
-    // s 的后缀数组
-    sa := (*struct {
-        _  []byte
-        sa []int32
-    })(unsafe.Pointer(suffixarray.New(s))).sa
-
-    // 后缀名次数组 rank（相当于 sa 的反函数）
-    // 后缀 s[i:] 位于后缀字典序中的第 rank[i] 个
-    // 特别地，rank[0] 即 s 在后缀字典序中的排名，rank[n-1] 即 s[n-1:] 在字典序中的排名
-    rank := make([]int, n)
-    for i, p := range sa {
-        rank[p] = i
-    }
-
-    // 高度数组 height
-    // height[0] = 0
-    // height[i] = LCP(s[sa[i]:], s[sa[i-1]:])
-    height := make([]int, n)
-    h := 0
-    for i, rk := range rank {
-        if h > 0 {
-            h--
-        }
-        if rk > 0 {
-            for j := int(sa[rk-1]); i+h < len(s) && j+h < len(s) && s[i+h] == s[j+h]; h++ {
-            }
-        }
-        height[rk] = h
-    }
-
-    // 若高度对应的 sa[i-1] 和 sa[i] 属于不同数组，则更新答案的最大值
-    for i := 1; i < n; i++ {
-        if sa[i] < n1 != (sa[i-1] < n1) {
-            ans = max(ans, height[i])
-        }
-    }
-    return
-}
-
-作者：灵茶山艾府
-链接：https://leetcode.cn/problems/maximum-length-of-repeated-subarray/solutions/866328/on-hou-zhui-shu-zu-by-endlesscheng-jwr2/
-来源：力扣（LeetCode）
-著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
-```
+‍
