@@ -1,7 +1,7 @@
 ---
 title: day06
 date: '2026-01-06 18:29:03'
-updated: '2026-01-06 19:43:02'
+updated: '2026-01-29 17:38:46'
 permalink: /post/day06-cntxu.html
 comments: true
 toc: true
@@ -39,7 +39,7 @@ toc: true
 
 建议： 这道题目，大家可以感受到 数组 用来做哈希表 给我们带来的遍历之处。
 
-[题目链接/文章讲解/视频讲解： ]()​<u>[https://programmercarl.com/0242.%E6%9C%89%E6%95%88%E7%9A%84%E5%AD%97%E6%AF%8D%E5%BC%82%E4%BD%8D%E8%AF%8D.html](https://programmercarl.com/0242.%E6%9C%89%E6%95%88%E7%9A%84%E5%AD%97%E6%AF%8D%E5%BC%82%E4%BD%8D%E8%AF%8D.html)</u>
+题目链接/文章讲解/视频讲解： <u>[https://programmercarl.com/0242.%E6%9C%89%E6%95%88%E7%9A%84%E5%AD%97%E6%AF%8D%E5%BC%82%E4%BD%8D%E8%AF%8D.html](https://programmercarl.com/0242.%E6%9C%89%E6%95%88%E7%9A%84%E5%AD%97%E6%AF%8D%E5%BC%82%E4%BD%8D%E8%AF%8D.html)</u>
 
 ###  349. 两个数组的交集
 
@@ -109,14 +109,14 @@ class Solution {
 // 更简洁的写法见右边的【Java Stream】
 class Solution {
     public int[] intersection(int[] nums1, int[] nums2) {
-        Set<Integer> st = new HashSet<>();
+        Set<Integer> st = new HashSet<>();//定义hashset，本质哈希表实现，不允许重复
         for (int x : nums1) {
-            st.add(x);
+            st.add(x);//强化for循环，逐个添加，用x接收nums1
         }
 
-        List<Integer> lst = new ArrayList<>();
+        List<Integer> lst = new ArrayList<>();//初始化arraylist
         for (int x : nums2) {
-            if (st.remove(x)) { // x 在 st 中
+            if (st.remove(x)) { // x 在 st 中，如果删除成功，则说明原来有，否则则无，其实也是通过删除保证了我的list也具有set去重属性
                 lst.add(x);
             }
         }
@@ -127,7 +127,7 @@ class Solution {
             ans[i] = lst.get(i);
         }
         return ans;
-    }
+    }//结果处理
 }
 
 作者：灵茶山艾府

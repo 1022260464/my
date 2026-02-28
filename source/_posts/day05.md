@@ -1,7 +1,7 @@
 ---
 title: day05
 date: '2026-01-05 16:14:52'
-updated: '2026-01-05 18:51:53'
+updated: '2026-01-29 17:38:54'
 permalink: /post/day05-z4ejpj.html
 comments: true
 toc: true
@@ -39,19 +39,19 @@ toc: true
 
 题目链接/文章讲解/视频讲解：<u>[https://programmercarl.com/0019.%E5%88%A0%E9%99%A4%E9%93%BE%E8%A1%A8%E7%9A%84%E5%80%92%E6%95%B0%E7%AC%ACN%E4%B8%AA%E8%8A%82%E7%82%B9.html](https://programmercarl.com/0019.%E5%88%A0%E9%99%A4%E9%93%BE%E8%A1%A8%E7%9A%84%E5%80%92%E6%95%B0%E7%AC%ACN%E4%B8%AA%E8%8A%82%E7%82%B9.html)</u>
 
-### ** 面试题 02.07. 链表相交  **
+### 面试题 02.07. 链表相交  
 
 本题没有视频讲解，大家注意 数值相同，不代表指针相同。
 
 [题目链接/文章讲解：]()​<u>[https://programmercarl.com/%E9%9D%A2%E8%AF%95%E9%A2%9802.07.%E9%93%BE%E8%A1%A8%E7%9B%B8%E4%BA%A4.html](https://programmercarl.com/%E9%9D%A2%E8%AF%95%E9%A2%9802.07.%E9%93%BE%E8%A1%A8%E7%9B%B8%E4%BA%A4.html)</u>
 
-### ** 142.环形链表II  **
+### 142.环形链表II 
 
 算是链表比较有难度的题目，需要多花点时间理解 确定环和找环入口，建议先看视频。
 
 [题目链接/文章讲解/视频讲解：]()​<u>[https://programmercarl.com/0142.%E7%8E%AF%E5%BD%A2%E9%93%BE%E8%A1%A8II.html](https://programmercarl.com/0142.%E7%8E%AF%E5%BD%A2%E9%93%BE%E8%A1%A8II.html)</u>​[]()
 
-### **总结 **
+### 总结
 
 对于链表的题目，大家最大的困惑可能就是 什么使用用虚拟头结点，什么时候不用虚拟头结点？
 

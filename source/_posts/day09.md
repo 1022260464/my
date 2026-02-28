@@ -1,7 +1,7 @@
 ---
 title: day09
 date: '2026-01-09 18:25:29'
-updated: '2026-01-09 19:09:10'
+updated: '2026-01-29 17:38:21'
 permalink: /post/day09-z2x54a5.html
 comments: true
 toc: true
@@ -13,19 +13,16 @@ toc: true
 
 # **第四章 字符串part02**
 
+**KMP算法暂且放过，后续再学**
+
 今日任务
 
-● 151.翻转字符串里的单词
-
-● 卡码网：55.右旋转字符串
-
-● 28. 实现 strStr()
-
-● 459.重复的子字符串
-
-● 字符串总结
-
-● 双指针回顾
+- [ ] ● 151.翻转字符串里的单词
+- [ ] ● 卡码网：55.右旋转字符串
+- [ ] ● 28. 实现 strStr()
+- [ ] ● 459.重复的子字符串
+- [ ] ● 字符串总结
+- [ ] ● 双指针回顾
 
 ##  详细布置
 
@@ -45,13 +42,13 @@ toc: true
 
 ## **28. 实现 strStr()  （本题可以跳过）**
 
-[因为KMP算法很难，大家别奢求 一次就把kmp全理解了，大家刚学KMP一定会有各种各样的疑问，先留着，别期望立刻啃明白，第一遍了解大概思路，二刷的时候，再看KMP会 好懂很多。]()
+因为KMP算法很难，大家别奢求 一次就把kmp全理解了，大家刚学KMP一定会有各种各样的疑问，先留着，别期望立刻啃明白，第一遍了解大概思路，二刷的时候，再看KMP会 好懂很多。
 
-[或者说大家可以放弃一刷可以不看KMP，今天来回顾一下之前的算法题目就可以。]()
+或者说大家可以放弃一刷可以不看KMP，今天来回顾一下之前的算法题目就可以。
 
-[因为大家 算法能力还没到，细扣 很难的算法，会把自己绕进去，就算别人给解释，只会激发出更多的问题和疑惑。所以大家先了解大体过程，知道这么回事， 等自己有 算法基础和思维了，在看多看几遍视频，慢慢就理解了。]()
+因为大家 算法能力还没到，细扣 很难的算法，会把自己绕进去，就算别人给解释，只会激发出更多的问题和疑惑。所以大家先了解大体过程，知道这么回事， 等自己有 算法基础和思维了，在看多看几遍视频，慢慢就理解了。
 
-[题目链接/文章讲解/视频讲解：]()​<u>[https://programmercarl.com/0028.%E5%AE%9E%E7%8E%B0strStr.html](https://programmercarl.com/0028.%E5%AE%9E%E7%8E%B0strStr.html)</u>​[ ]()
+题目链接/文章讲解/视频讲解：<u>[https://programmercarl.com/0028.%E5%AE%9E%E7%8E%B0strStr.html](https://programmercarl.com/0028.%E5%AE%9E%E7%8E%B0strStr.html)</u>​[ ]()
 
 ##  459.重复的子字符串  （本题可以跳过）
 
@@ -59,17 +56,17 @@ toc: true
 
 我的建议是 **KMP和本题，一刷的时候 ，可以适当放过，了解怎么回事就行，二刷的时候再来硬啃**
 
-[题目链接/文章讲解/视频讲解：]()​<u>[https://programmercarl.com/0459.%E9%87%8D%E5%A4%8D%E7%9A%84%E5%AD%90%E5%AD%97%E7%AC%A6%E4%B8%B2.html](https://programmercarl.com/0459.%E9%87%8D%E5%A4%8D%E7%9A%84%E5%AD%90%E5%AD%97%E7%AC%A6%E4%B8%B2.html)</u>
+题目链接/文章讲解/视频讲解：<u>[https://programmercarl.com/0459.%E9%87%8D%E5%A4%8D%E7%9A%84%E5%AD%90%E5%AD%97%E7%AC%A6%E4%B8%B2.html](https://programmercarl.com/0459.%E9%87%8D%E5%A4%8D%E7%9A%84%E5%AD%90%E5%AD%97%E7%AC%A6%E4%B8%B2.html)</u>
 
 ### **字符串总结 **
 
 比较简单，大家读一遍就行
 
-[题目链接/文章讲解：]()​<u>[https://programmercarl.com/%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%80%BB%E7%BB%93.html](https://programmercarl.com/%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%80%BB%E7%BB%93.html)</u>
+题目链接/文章讲解：<u>[https://programmercarl.com/%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%80%BB%E7%BB%93.html](https://programmercarl.com/%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%80%BB%E7%BB%93.html)</u>
 
 ###  双指针回顾
 
-[此时我们已经做过10道双指针的题目了，来一起回顾一下，大家自己也总结一下双指针的心得]()
+此时我们已经做过10道双指针的题目了，来一起回顾一下，大家自己也总结一下双指针的心得
 
 [文章讲解：]()​<u>[https://programmercarl.com/%E5%8F%8C%E6%8C%87%E9%92%88%E6%80%BB%E7%BB%93.html](https://programmercarl.com/%E5%8F%8C%E6%8C%87%E9%92%88%E6%80%BB%E7%BB%93.html)</u>
 
@@ -492,6 +489,33 @@ class Solution {
                 start = end + 1;
             }
         }
+    }
+}
+```
+
+# 用java库的解法：
+
+```java
+class Solution {
+    public String reverseWords(String s) {
+       s = s.trim(); // 删除首尾空格
+       int j = s.length() - 1, i = j;
+       StringBuilder res = new StringBuilder();
+
+       while (i >= 0) {
+           // 1. 搜索首个空格（确定单词左边界）
+           while (i >= 0 && s.charAt(i) != ' ') i--; 
+           
+           // 2. 将单词提取并添加到 res
+           res.append(s.substring(i + 1, j + 1)).append(" "); 
+           
+           // 3. 跳过单词之间的多余空格（关键一步！）
+           while (i >= 0 && s.charAt(i) == ' ') i--;
+           
+           // 4. 让 j 指向下一个单词的末尾
+           j = i;
+       }    
+       return res.toString().trim();   
     }
 }
 ```
